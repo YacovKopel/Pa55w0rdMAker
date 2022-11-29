@@ -15,7 +15,6 @@ var symbols = ['!', '#', '$', '%', '&', '(', ')', '*', '+']
 
 // generates password prompt and keeps within character length limits
 function generatePassword(){
-  generateBtn;
   numChar=prompt("How many charachters? \n (min 8: max 128)");
   if (numChar >= 8 && numChar <= 128){
     uppercaseChar();
@@ -86,11 +85,15 @@ function makeid(numChar) {
   for ( var i = 0; i < numChar; i++ ) {
       result += myPassword[Math.floor(Math.random() * charactersLength)];
   }
-  // Write password to the #password input
+  // Writes password to the #password input
   var passwordText = document.querySelector("#password");
 
   passwordText.value = result;
   generateBtn;
 }
 
-generatePassword();
+
+
+if (generateBtn){
+  generatePassword;
+}
