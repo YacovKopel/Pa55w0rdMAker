@@ -22,6 +22,7 @@ function generatePassword(){
     numbersChar();
     symbolsChar();
     makeid(numChar);
+    myPassword.length = 0
   } else{
     alert("Password has to be between 8 to 128 Characters.\n Try again");
   }
